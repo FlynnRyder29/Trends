@@ -1,0 +1,14 @@
+<html>
+{% load static from staticfiles %}
+<head>
+<title>DELETE YOUR PRODUCT</title>
+</head>
+<body Background="{% static 'b5.JPG' %}">
+<body>
+<FORM action='#' method='post'>
+{%csrf_token%}
+<center><H1>DELETE YOUR PRODUCT</H1></center>
+<br>
+<input type='DELETE' value='Register'>
+</FORM>
+</html>

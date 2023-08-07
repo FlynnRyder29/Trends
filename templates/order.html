@@ -1,0 +1,53 @@
+﻿<html>
+{% load static %}
+<head>
+<a href='http://localhost:8000/trends/'><font color='FF00CC'>Home</font></a>
+<title>ORDER YOUR PRODUCT</title>
+</head>
+<body Background="{% static 'b5.JPG' %}">
+<body>
+<FORM action='#' method='post'>
+  {% csrf_token %}
+<center><H1>ORDER YOUR PRODUCT</H1></center>
+<br>
+  <H3>Name</H3><input type='text' size=60 name='sname'>
+<br>
+<br>
+  <H3>Name of product</H3> <input type='text' size=60 name='product name'>
+<br>
+<br>
+TYPE OF PRODUCT
+<br>
+<br>
+<input type='radio' name='product' value='shirts'>shirts
+<input type='radio' name='product' value='trousers'>Trousers
+<input type='radio' name='product' value='watches'>watches
+<input type='radio' name='product' value='shoes'>shoes
+<br>
+<br>
+<br>
+TYPE OF DELIVERY
+<br>
+<br>
+<input type='checkbox' name='DELIVERY' value='COD'>CASH ON DELIVERY
+<input type='checkbox' name='DELIVERY' value='CREDIT CARD'>CREDIT CARD
+<input type='checkbox' name='DELIVERY' value='DEBIT CARD'>DEBIT CARD
+<input type='checkbox' name='DELIVERY' value='PAY LATER'>PAY LATER
+<br>
+<br>
+<br>
+Address
+<textarea rows=6 cols=25 name='address'></textarea>
+<br>
+<input type='submit' value='Order'>
+<input type='Reset' value='Refresh'>
+<a href='http://localhost:8000/delete/#'><font color='FF00CC'>CLICK HERE TO DELETE PREVIOUS ORDERS</a>
+</body>
+<marquee>
+<img width='150' height='100' Hspace='5' src="{% static 'm1.JPG' %}">
+<img width='150' height='100' Hspace='5' src="{% static 'm2.JPG' %}">
+<img width='150' height='100' Hspace='5' src="{% static 'm3.JPG' %}">
+<img width='150' height='100' Hspace='5' src="{% static 'm4.JPG' %}">
+</marquee>
+</FORM>
+</html>

@@ -1,0 +1,16 @@
+﻿<html>
+{% load static %}
+<a href='http://localhost:8000/trends/'><font color='FF00CC'>Home</font></a>
+<head>
+<title>DELETE YOUR ORDERS</title>
+</head>
+<body Background="{% static 'b6.JPG' %}" Text='white'>
+<body>
+<FORM action='#' method='post'>
+{%csrf_token%}
+<center><H1>DELETE YOUR ORDERS</H1></center>
+<p style='color:white'>
+<br>
+<input type='submit' value='Delete'>
+</FORM>
+</html>
